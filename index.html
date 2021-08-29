@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe  Game</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <div class="game-board">
+        <div class="box" id="0" onclick="triggerMe('0')"></div>
+        <div class="box" id="1" onclick="triggerMe('1')"></div>
+        <div class="box" id="2" onclick="triggerMe('2')"></div>
+        <div class="box" id="3" onclick="triggerMe('3')"></div>
+        <div class="box" id="4" onclick="triggerMe('4')"></div>
+        <div class="box" id="5" onclick="triggerMe('5')"></div>
+        <div class="box" id="6" onclick="triggerMe('6')"></div>
+        <div class="box" id="7" onclick="triggerMe('7')"></div>
+        <div class="box" id="8" onclick="triggerMe('8')"></div>
+    </div>
+
+    <div class="options">
+        <div class="timer_set">00:00</div>
+
+        <div class="player_status">
+            <ul>
+                <li id="player_1"> Player A : <span id="playX">0</span></li>
+                <li id="player_2"> Player B : <span id="playY">0</span></li>
+            </ul>
+        </div>
+
+
+        <div class="controller">
+            <button class="succ" onclick="startGame()"> Start</button>
+            <button class="rese" onclick="resetGame()"> Reset</button>
+        </div>
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="js/game.js"></script>
+</body>
+</html>
